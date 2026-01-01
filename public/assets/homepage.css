@@ -1,0 +1,110 @@
+/* ==============================
+   GLOBAL RESET
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==============================
+   HEADER
+================================ */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0f172a;
+    padding: 14px 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    color: #e5e7eb;
+    margin-left: 22px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+.logout-btn {
+    background: #ef4444;
+    padding: 6px 14px;
+    border-radius: 6px;
+    color: #fff !important;
+}
+
+.logout-btn:hover {
+    background: #dc2626;
+}
+
+/* ==============================
+   HERO SECTION
+================================ */
+.hero {
+    height: calc(100vh - 140px);
+    background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-overlay {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-overlay h1 {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.hero-overlay h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #38bdf8;
+}
+
+.hero-overlay p {
+    font-size: 18px;
+    max-width: 700px;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.welcome-user {
+    margin-top: 25px;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* ==============================
+   FOOTER
+================================ */
+.main-footer {
+    background: #020617;
+    color: #9ca3af;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+}

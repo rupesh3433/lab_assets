@@ -1,4 +1,18 @@
 <?php require __DIR__ . '/layout/header.php'; ?>
-<h1>Welcome, <?= $_SESSION['user']['name']; ?></h1>
-<p>This is the home page.</p>
+
+<section class="hero">
+    <div class="hero-overlay">
+        <h1>Welcome to</h1>
+        <h2>Lab Assets Management System</h2>
+
+        <p>
+            Manage laboratory equipment efficiently, securely, and digitally.
+        </p>
+
+        <span class="welcome-user">
+            Logged in as <strong><?= htmlspecialchars($_SESSION['user']['name']) ?></strong>
+        </span>
+    </div>
+</section>
+
 <?php require __DIR__ . '/layout/footer.php'; ?>

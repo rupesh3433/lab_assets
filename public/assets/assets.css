@@ -1,0 +1,141 @@
+/* ===============================
+   COMMON PAGE WRAPPER
+================================ */
+h2 {
+    margin: 30px 0 20px;
+    font-size: 28px;
+    color: #0f172a;
+}
+
+/* ===============================
+   TABLE STYLING (Assets List)
+================================ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background: #0f172a;
+    color: #ffffff;
+}
+
+thead th {
+    padding: 14px;
+    text-align: left;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+tbody td {
+    padding: 14px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 14px;
+}
+
+tbody tr:hover {
+    background: #f1f5f9;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* ===============================
+   ACTION LINKS
+================================ */
+td a {
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+td a[href*="edit"] {
+    color: #2563eb;
+}
+
+td a[href*="delete"] {
+    color: #dc2626;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* ===============================
+   FORM CARD (Add / Edit Asset)
+================================ */
+form {
+    max-width: 500px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 1px solid #cbd5f5;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+form input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37,99,235,0.2);
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+form button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+form button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(37,99,235,0.35);
+}
+
+/* ===============================
+   BACK LINKS
+================================ */
+p a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* ===============================
+   EMPTY STATE
+================================ */
+td[colspan] {
+    padding: 30px;
+    color: #64748b;
+    font-style: italic;
+}

@@ -10,9 +10,13 @@ class User {
 
     public function register($name, $email, $password) {
         $stmt = $this->db->prepare(
-            "INSERT INTO users (name, email, password) VALUES (?, ?, ?)"
+            "INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, 'user')"
         );
-        return $stmt->execute([$name, $email, password_hash($password, PASSWORD_DEFAULT)]);
+        return $stmt->execute([
+            $name,
+            $email,
+            password_hash($password, PASSWORD_DEFAULT)
+        ]);
     }
 
     public function login($email) {
